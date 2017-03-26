@@ -116,15 +116,18 @@ a:active
   color: white;
 }
 
-.content .details {
+.content .details,
+.content .description {
   color: gray;
 }
 
+.course-heading,
 .heading,
 .details {
   display: flex;
 }
 
+.course-heading,
 .heading,
 .details {
   margin-top: 24px;
@@ -153,6 +156,66 @@ a:active
 .course-name {
   line-height: 48px;
   margin-left: 48px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .sidebar {
+    width: 30%;
+  }
+
+  .content {
+    margin-left: 30%;
+  }
+
+  .company,
+  .timeline,
+  .school-name,
+  .level {
+    flex: 0 0 30%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .name {
+    margin-top: 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  .contact .value {
+    margin-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .heading,
+  .details {
+    flex-direction: column;
+  }
+
+  .title,
+  .description {
+    margin-top: 12px;
+  }
+
+  .degree {
+    margin-top: 6px;
+  }
 }
 
 
